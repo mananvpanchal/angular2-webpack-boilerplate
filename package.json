@@ -7,7 +7,7 @@
     "start": "webpack-dev-server --port 3000 --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Manan V. Panchal <mpanchal@integconsulting.com>",
+  "author": "Manan V. Panchal <mananvpanchal@gmail.com>",
   "license": "ISC",
   "dependencies": {
     "@angular/common": "~2.2.0",
