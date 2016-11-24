@@ -1,8 +1,14 @@
+var helpers = require('./helpers');
+var path = require('path');
+
 module.exports = {
   entry: "./src/index.ts",
   output: {
     path: __dirname,
     filename: "bundle.js"
+  },
+  devServer: {
+    contentBase: "./static"
   },
   resolve: {
     extensions: ['', '.ts', '.js']
@@ -10,7 +16,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: "style!css" },
-      { test: /\.ts$/, loader: "ts-loader" }
+      { test: /\.ts$/, loader: "ts-loader", include: path.resolve(__dirname, './src') }
     ]
   }
 };

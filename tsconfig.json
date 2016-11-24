@@ -1,6 +1,11 @@
 {
+  "disableCompileOnSave": true,
+  "settings": {
+    "atom-typescript.compileOnSave": false
+  },
   "compilerOptions": {
     "experimentalDecorators": true,
+    "outDir": "./out",
     "types": [
       "core-js",
       "node"
