@@ -1,4 +1,3 @@
-var helpers = require('./helpers');
 var path = require('path');
 
 module.exports = {
