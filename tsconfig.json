@@ -1,9 +1,6 @@
 {
-  "disableCompileOnSave": true,
-  "settings": {
-    "atom-typescript.compileOnSave": false
-  },
   "compilerOptions": {
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "./out",
     "types": [

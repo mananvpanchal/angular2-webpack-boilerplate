@@ -15,7 +15,7 @@ module.exports = {
   module: {
     loaders: [
       { test: /\.css$/, loader: "style!css" },
-      { test: /\.ts$/, loader: "ts-loader", include: path.resolve(__dirname, './src') }
+      { test: /\.ts$/, loaders: ["ts-loader", "angular2-router-loader"], include: path.resolve(__dirname, './src') }
     ]
   }
 };
