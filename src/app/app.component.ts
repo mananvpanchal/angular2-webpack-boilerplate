@@ -6,7 +6,9 @@ import { CommonService } from './services/common.service';
   template: `<h1>Hello {{name}}</h1>
   <div>{{cs.getId()}}</div>
   <div>
-    <span><a routerLink="nonlazy">Non Lazy</a></span>&nbsp;&nbsp;&nbsp;<span><a routerLink="lazy">Lazy</a></span>
+    <span><a routerLink="eager">Eager</a></span>
+    &nbsp;&nbsp;&nbsp;<span><a routerLink="lazy">Lazy</a></span>
+    &nbsp;&nbsp;&nbsp;<span><a routerLink="lazy/otherlazy">Other Lazy</a></span>
     <router-outlet></router-outlet>
   </div>`
 })

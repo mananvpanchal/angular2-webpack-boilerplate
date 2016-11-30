@@ -3,23 +3,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent }  from './app.component';
-import { NonLazyModule } from './nonlazy/nonlazy.module';
-import { NonLazyComponent } from './nonlazy/nonlazy.component';
+import { EagerModule } from './eager/eager.module';
+import { EagerComponent } from './eager/eager.component';
 import { CommonService } from './services/common.service';
 
 const routerConfig = [
     {
-      path: "nonlazy",
-      component: NonLazyComponent
+      path: "eager",
+      component: EagerComponent
     },
     {
       path: "lazy",
-      loadChildren: "./lazy/lazy.module"
+      loadChildren: "./lazy/lazy.module#LazyModule"
     }
 ];
 
 @NgModule({
-  imports: [ BrowserModule, RouterModule, RouterModule.forRoot(routerConfig), NonLazyModule ],
+  imports: [ BrowserModule, RouterModule, RouterModule.forRoot(routerConfig), EagerModule ],
   declarations: [ AppComponent ],
   bootstrap: [ AppComponent ],
   providers: [ CommonService ]

@@ -3,10 +3,10 @@ import { Component } from '@angular/core';
 import { CommonService } from '../services/common.service';
 
 @Component({
-  selector: 'non-lazy',
-  template: `<div><h1>Non Lazy</h1><button (click)="incr()">Increment</button><div>{{cs.getId()}}</div></div>`
+  selector: 'eager',
+  template: `<div><h1>Eager</h1><button (click)="incr()">Increment</button><div>{{cs.getId()}}</div></div>`
 })
-export class NonLazyComponent {
+export class EagerComponent {
   constructor(private cs : CommonService) {
 
   }
