@@ -4,6 +4,10 @@ import { Injectable } from '@angular/core';
 export class PrivateService {
   id = 0;
 
+  constructor() {
+    console.log('private service constructor');
+  }
+
   incr() {
     this.id++;
   }

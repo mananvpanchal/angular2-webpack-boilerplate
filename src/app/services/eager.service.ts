@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class CommonService {
+export class EagerService {
   id = 0;
 
   constructor() {
-    console.log('common service constructor');
+    console.log('eager service constructor');
   }
 
   incr() {

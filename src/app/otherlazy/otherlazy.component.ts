@@ -3,17 +3,16 @@ import { PrivateService } from '../services/private.service';
 import { CommonService } from '../services/common.service';
 
 @Component({
-  selector: 'lazy',
-  template: `<div>
-            <h1>Lazy</h1><button (click)="incr()">Increment</button>
-            <div>Common: {{cs.getId()}}</div>
-            <div>Private: {{ps.getId()}}</div>
-            </div>`
+  selector: 'otherlazy',
+  template: `<div><h1>Other Lazy</h1><button (click)="incr()">Increment</button>
+  <div>Common: {{cs.getId()}}</div>
+  <div>Private: {{ps.getId()}}</div>
+  </div>`
 })
-export class LazyComponent {
+export class OtherLazyComponent {
 
   constructor(private cs : CommonService, private ps : PrivateService) {
-    console.log('lazy constructor');
+    console.log('other lazy constructor');
   }
 
   incr() {

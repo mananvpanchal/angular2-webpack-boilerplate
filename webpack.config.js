@@ -10,12 +10,12 @@ module.exports = {
     contentBase: "./static"
   },
   resolve: {
-    extensions: ['', '.ts', '.js']
+    extensions: ['.ts', '.js']
   },
   module: {
     loaders: [
-      { test: /\.css$/, loader: "style!css" },
-      { test: /\.ts$/, loaders: ["ts-loader", "angular2-router-loader"], include: path.resolve(__dirname, './src') }
+      { test: /\.css$/, loader: "style-loader!css-loader" },
+      { test: /\.ts$/, loaders: ["awesome-typescript-loader", "angular2-router-loader"], include: path.resolve(__dirname, './src') }
     ]
   }
 };

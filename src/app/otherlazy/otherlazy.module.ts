@@ -1,23 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
-import { LazyComponent } from './lazy.component';
+import { OtherLazyComponent } from './otherlazy.component';
 import { PrivateService } from '../services/private.service';
 import { CommonService } from '../services/common.service';
 
 const routerConfig = [
   {
     path: "",
-    component: LazyComponent
+    component: OtherLazyComponent
   }
 ];
 
 @NgModule({
   imports: [ RouterModule.forChild(routerConfig) ],
-  declarations: [ LazyComponent ],
-  exports: [ LazyComponent ],
+  declarations: [ OtherLazyComponent ],
+  exports: [ OtherLazyComponent ],
   providers: [ PrivateService, CommonService ]
 })
-export class LazyModule {
+export class OtherLazyModule {
 
 }

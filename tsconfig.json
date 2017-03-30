@@ -1,8 +1,13 @@
 {
+  "disableCompileOnSave": true,
+  "settings": {
+    "atom-typescript.compileOnSave": false
+  },
   "compilerOptions": {
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "outDir": "./out",
+    "lib": ["es2017", "dom"],
     "types": [
       "core-js",
       "node"
