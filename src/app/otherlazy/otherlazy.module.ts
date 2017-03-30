@@ -20,4 +20,8 @@ const routerConfig = [
 })
 export class OtherLazyModule {
 
+  constructor() {
+    console.log("other lazy module constructor ")
+  }
+
 }

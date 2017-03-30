@@ -19,5 +19,7 @@ const routerConfig = [
   providers: [ PrivateService, CommonService ]
 })
 export class LazyModule {
-
+  constructor() {
+    console.log("lazy module constructor ")
+  }
 }
