@@ -5,7 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent }  from './app.component';
 import { EagerModule } from './eager/eager.module';
 import { EagerComponent } from './eager/eager.component';
-//import { CommonService } from './services/common.service';
+import { CommonService } from './services/common.service';
 
 const routerConfig = [
     {
@@ -25,7 +25,7 @@ const routerConfig = [
 @NgModule({
   imports: [ BrowserModule, RouterModule, RouterModule.forRoot(routerConfig), EagerModule ],
   declarations: [ AppComponent ],
-   bootstrap: [ AppComponent ]
-  // providers: [ CommonService ]
+   bootstrap: [ AppComponent ],
+   providers: [ CommonService ]
 })
 export class AppModule { }

@@ -3,7 +3,6 @@ import { RouterModule } from '@angular/router';
 
 import { LazyComponent } from './lazy.component';
 import { PrivateService } from '../services/private.service';
-import { CommonService } from '../services/common.service';
 
 const routerConfig = [
   {
@@ -16,7 +15,7 @@ const routerConfig = [
   imports: [ RouterModule.forChild(routerConfig) ],
   declarations: [ LazyComponent ],
   exports: [ LazyComponent ],
-  providers: [ PrivateService, CommonService ]
+  providers: [ PrivateService ]
 })
 export class LazyModule {
   constructor() {
